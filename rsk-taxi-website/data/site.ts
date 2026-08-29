@@ -1,0 +1,20 @@
+export const site = {
+  name: "RSK Tours and Travels",
+  tagline: "Your trusted taxi service in Goa",
+  phone: "{{PHONE}}",
+  whatsapp: "{{WHATSAPP}}",
+  email: "{{EMAIL}}",
+  address: "{{GOA_BUSINESS_ADDRESS}}",
+  mapEmbed: "{{GOOGLE_MAP_EMBED_URL}}",
+  hours: "Available 24/7 for advance bookings",
+  serviceArea: "North Goa, South Goa and airport transfers",
+  googleInteractions: "257+",
+};
+
+export function whatsappLink(message = "Hello RSK Tours and Travels, I would like to enquire about a ride in Goa.") {
+  return `https://wa.me/${site.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(message)}`;
+}
+
+export function phoneLink() {
+  return `tel:${site.phone.replace(/[^+0-9]/g, "")}`;
+}

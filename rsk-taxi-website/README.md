@@ -17,12 +17,19 @@ bun dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Business details
 
+Edit `data/site.ts` for `{{PHONE}}`, `{{WHATSAPP}}`, `{{EMAIL}}`, `{{GOA_BUSINESS_ADDRESS}}` and `{{GOOGLE_MAP_EMBED_URL}}`. Edit `data/vehicles.ts` and `data/packages.ts` for all price placeholders. Replace `{{INCLUSIONS}}`, `{{EXCLUSIONS}}` and `{{ADDITIONAL_CHARGES_NOTE}}` with approved commercial terms.
+
+The booking route validates and rate-limits requests, creates a pre-filled WhatsApp link, and sends email when SMTP variables from `.env.example` are configured. Without SMTP configuration, WhatsApp still works and the API returns the link.
+
+## Learn More
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
+Check out [the Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details. Import this repository into Vercel, add the SMTP variables in project settings, and deploy with no extra configuration.
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
