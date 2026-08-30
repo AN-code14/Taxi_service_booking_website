@@ -11,8 +11,8 @@ export const site = {
   googleInteractions: "257+",
 };
 
-export function whatsappLink(message = "Hello RSK Tours and Travels, I would like to enquire about a ride in Goa.") {
-  return `https://wa.me/${site.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(message)}`;
+export function whatsappLink(message = "Hello RSK Tours and Travels, I would like to enquire about a ride in Goa.", number = site.whatsapp) {
+  return `https://wa.me/${number.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(message)}`;
 }
 
 export function phoneLink() {
