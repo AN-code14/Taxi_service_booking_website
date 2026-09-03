@@ -1,6 +1,0 @@
-"use client";
-import Image from "next/image";
-import { useEffect, useState } from "react";
-import dynamic from "next/dynamic";
-const CarScene = dynamic(() => import("./hero-car-scene").then(module => module.CarScene), { ssr: false, loading: () => null });
-export function HeroCar() { const [ready, setReady] = useState(false); useEffect(() => { const timer = setTimeout(() => setReady(true), 450); return () => clearTimeout(timer); }, []); return <div className={ready ? "car-stage ready" : "car-stage"} aria-label="Interactive 3D illustration of a premium Goa taxi"><CarScene /><div className="sun-disc" /><div className="road-glow" /><div className="car-shadow" /><div className="car-body"><div className="car-roof" /><div className="car-window front" /><div className="car-window back" /><div className="car-light" /><div className="car-grille" /><div className="wheel left" /><div className="wheel right" /><span className="car-badge"><Image src="/logo.png" alt="RSK Tours and Travels" width={40} height={40} className="rounded-full object-cover" /></span></div><p className="car-caption">Your Goa day, in good hands <span>↗</span></p></div>; }
