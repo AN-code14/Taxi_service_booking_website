@@ -19,7 +19,7 @@ Open [https://rsk-taxi-website.vercel.app/](https://rsk-taxi-website.vercel.app/
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 ## Business details
 
-Edit `data/site.ts` for Call Contact `7318387987`, for Whatsapp Contact `8830576443`, Connect with Email `{{EMAIL}}`. Edit `data/vehicles.ts` and `data/packages.ts` for all price placeholders. 
+Edit `data/site.ts` for Call Contact `7318387987`, for Whatsapp Contact `8830576443`, Connect with Email `rsktravellers01@gmail.com`. Edit `data/vehicles.ts` and `data/packages.ts` for all price placeholders. 
 
 The booking route validates and rate-limits requests, creates a pre-filled WhatsApp link, and sends email when SMTP variables from `.env.example` are configured. Without SMTP configuration, WhatsApp still works and the API returns the link.
 

@@ -5,6 +5,8 @@ export const localHireRates = {
   suv: "₹4000",
 } as const;
 
+export const extraKmPricingNote = "8 hours / 80 km included — ₹20 per extra km";
+
 export const airportPickupDropRates = {
   hatchback: "₹2500",
   sedan: "₹2700",

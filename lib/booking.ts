@@ -8,7 +8,7 @@ export const bookingSchema = z.object({
   pickup: z.string().trim().min(2).max(160),
   drop: z.string().trim().max(160).optional().default(""),
   package: z.string().trim().max(80).optional().default(""),
-  vehicle: z.enum(["Sedan", "Hatchback", "SUV"]),
+  vehicle: z.enum(["Sedan", "Hatchback", "SUV", "MUV"]),
   passengers: z.coerce.number().int().min(1).max(20),
   notes: z.string().trim().max(800).optional().default(""),
   website: z.string().max(0).optional().default(""),

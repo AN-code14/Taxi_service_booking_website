@@ -3,7 +3,7 @@ export const site = {
   tagline: "Your trusted taxi service in Goa",
   phone: "7318387987",
   whatsapp: "8830576443",
-  email: "{{EMAIL}}",
+  email: "rsk",
   address: "{{GOA_BUSINESS_ADDRESS}}",
   mapEmbed: "{{GOOGLE_MAP_EMBED_URL}}",
   hours: "Available 24/7 for advance bookings",

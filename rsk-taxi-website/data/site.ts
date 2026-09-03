@@ -1,9 +1,9 @@
 export const site = {
   name: "RSK Tours and Travels",
   tagline: "Your trusted taxi service in Goa",
-  phone: "7318387987",
+  phone: "+91 7318387987",
   whatsapp: "8830576443",
-  email: "{{EMAIL}}",
+  Email: "rsktravellers01@gmail.com",
   address: "{{GOA_BUSINESS_ADDRESS}}",
   mapEmbed: "{{GOOGLE_MAP_EMBED_URL}}",
   hours: "Available 24/7 for advance bookings",
