@@ -1,6 +1,6 @@
 export const localHireRates = {
   sedan: "₹2700",
-  hatchback: "₹2700",
+  hatchback: "₹2500",
   muv: "₹3500",
   suv: "₹4000",
 } as const;
