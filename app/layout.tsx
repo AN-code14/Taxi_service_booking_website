@@ -25,7 +25,17 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${dmSans.variable} ${fraunces.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <a
+          className="designer-watermark"
+          href="https://wa.me/918390325653"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Designed by Ajay Bind
+        </a>
+      </body>
     </html>
   );
 }
